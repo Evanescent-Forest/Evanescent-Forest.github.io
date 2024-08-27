@@ -37,6 +37,6 @@ th {
   src: url(TogebaraMedium.otf) format("opentype");
 }
 .togebara {
-  font-size: 32px;
+  font-size: 30px;
   font-family: 'togebara';
 }
