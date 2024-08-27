@@ -32,6 +32,11 @@ th {
     color: #ffffff;
 }
 
+audio {
+    height: 20px;
+    width: 273px;
+}
+
 @font-face {
   font-family: 'togebara';
   src: url(TogebaraMedium.otf) format("opentype");
