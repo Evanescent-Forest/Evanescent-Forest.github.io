@@ -34,7 +34,7 @@ th {
 
 @font-face {
   font-family: 'togebara';
-  src: url(TogebaraMedium.otf) format("otf");
+  src: url(TogebaraMedium.otf) format("opentype");
 }
 .togebara {
   font-family: 'togebara';
