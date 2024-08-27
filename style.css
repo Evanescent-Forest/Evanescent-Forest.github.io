@@ -31,3 +31,11 @@ ul {
 th {
     color: #ffffff;
 }
+
+@font-face {
+  font-family: 'togebara';
+  src: url(TogebaraMedium.otf) format("otf");
+}
+* {
+  font-family: 'my-font';
+}
