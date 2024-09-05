@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>impossibledanmaku - HSP3Dish</title>
+    <title>webgl - HSP3Dish</title>
     <style>
       body {
         font-family: arial;
@@ -180,7 +180,7 @@
           this.totalDependencies = Math.max(this.totalDependencies, left);
           Module.setStatus(left ? 'Preparing... (' + (this.totalDependencies-left) + '/' + this.totalDependencies + ')' : 'All downloads complete.');
         },
-        arguments: ["impossibledanmaku.ax"]
+        arguments: ["webgl.ax"]
       };
       Module.setStatus('Downloading...');
 
@@ -202,9 +202,9 @@ Module.expectedDataFileDownloads++;
       // worker
       PACKAGE_PATH = encodeURIComponent(location.pathname.toString().substring(0, location.pathname.toString().lastIndexOf('/')) + '/');
     }
-    var PACKAGE_NAME = 'impossibledanmaku.data';
-    var REMOTE_PACKAGE_NAME = (Module['filePackagePrefixURL'] || '') + 'impossibledanmaku.data';
-    var REMOTE_PACKAGE_SIZE = 31326;
+    var PACKAGE_NAME = 'webgl.data';
+    var REMOTE_PACKAGE_NAME = (Module['filePackagePrefixURL'] || '') + 'webgl.data';
+    var REMOTE_PACKAGE_SIZE = 30694;
     var PACKAGE_UUID = '51f84d03-0c74-4552-ac13-924e79e76977';
   
     function fetchRemotePackage(packageName, packageSize, callback, errback) {
@@ -305,7 +305,7 @@ function assert(check, msg) {
       },
     };
 
-      new DataRequest(0, 31326, 0, 0).open('GET', 'impossibledanmaku.ax');
+      new DataRequest(0, 30694, 0, 0).open('GET', 'webgl.ax');
 
 
     function processPackageData(arrayBuffer) {
@@ -319,12 +319,12 @@ function assert(check, msg) {
       Module['HEAPU8'].set(byteArray, ptr);
       DataRequest.prototype.byteArray = Module['HEAPU8'].subarray(ptr, ptr+byteArray.length);
 
-          DataRequest.prototype.requests["impossibledanmaku.ax"].onload();
+          DataRequest.prototype.requests["webgl.ax"].onload();
 
-          Module['removeRunDependency']('datafile_impossibledanmaku.data');
+          Module['removeRunDependency']('datafile_webgl.data');
 
     };
-    Module['addRunDependency']('datafile_impossibledanmaku.data');
+    Module['addRunDependency']('datafile_webgl.data');
   
     if (!Module.preloadResults) Module.preloadResults = {};
   
