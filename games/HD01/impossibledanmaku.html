@@ -267,6 +267,8 @@ function assert(check, msg) {
   if (!check) throw msg + new Error().stack;
 }
 
+Module['FS_createPath']('/', 'res', true, true);
+Module['FS_createPath']('/res', 'shaders', true, true);
 
 
     function DataRequest(start, end, crunched, audio) {
@@ -395,7 +397,7 @@ function assert(check, msg) {
 
 
     </script>
-    <script async type="text/javascript" src="hsp3dish.js"></script>
-  <p><font size="2" color="#404040">powered by <a href="https://hsp.tv/make/hsp3dish.html" target="_blank">hsp3dish.js</a> / OpenHSP</font></p>
+    <script async type="text/javascript" src="hsp3dishw-gp.js"></script>
+  <p><font size="2" color="#404040">powered by <a href="https://hsp.tv/make/hsp3dish.html" target="_blank">hsp3dishw-gp.js</a> / OpenHSP</font></p>
   </body>
 </html>
