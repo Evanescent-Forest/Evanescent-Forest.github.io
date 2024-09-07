@@ -60,3 +60,11 @@ img.RIGHT_RND{
     float: right;
     margin: 0 20px 10px 0;
 }
+
+.ClearLEFT{
+    clear: left;
+}
+
+.clearRIGHT{
+    clear: right;
+}
