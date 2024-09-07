@@ -51,12 +51,12 @@ audio {
     align-items: center;
 }
 
-img.LEFT{
+img.LEFT_RND{
     float: left;
     margin: 0 20px 10px 0;
 }
 
-img.RIGHT{
-    float: left;
+img.RIGHT_RND{
+    float: right;
     margin: 0 20px 10px 0;
 }
